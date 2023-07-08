@@ -1,0 +1,22 @@
+
+  Si creamos un nuevo metodo se agrega a los metodos de la lista del prototipo, ya de por
+si cuando definimos por ejemplo un array, el array esta heredando el prototipo array por eso se pueden usar sus funciones como push, filter entre otros.
+
+Defincion: es un mecanismo en donde los objetos heredan caracteristicas entre si;
+
+  El prototype chain o la cadena de prototipos hace referencia al enlace que se crea 
+entre prototipos que tienen su propio prototipo;Cuando buscamos un método o una propiedad en un objeto, se buscará inicialmente en el objeto y luego en la cadena de prototipos.;
+  
+  Cuando buscamos un método o una propiedad en un objeto, se buscará inicialmente en el 
+objeto y luego en la cadena de prototipos;
+
+    prototype => para poder ver en consola el prototipo que fue creado por uno mismo;
+      prototype => se pueden crear atravez de funciones;
+
+    __proto__ => para poder ver en consola el prototipo que eredan todos los objetos de javascript;
+      __proto__ => todos lo heredan;
+
+Caracteristicas de los prototipos:
+  - Un prototipo definido en su codigo fuente puede ser modificado y llamado.
+  - tiene existencia ficica en la memoria.
+  - Un objeto hereda propiedades (valores y metodos) de su prototipo. 
