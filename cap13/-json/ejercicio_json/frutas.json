@@ -1,0 +1,28 @@
+{
+  "frutas": [
+    {
+      "nombre": "manzana",
+      "color": "rojo",
+      "sabor": "dulce",
+      "precio": 2.5
+    },
+    {
+      "nombre": "plátano",
+      "color": "amarillo",
+      "sabor": "dulce",
+      "precio": 1.5
+    },
+    {
+      "nombre": "naranja",
+      "color": "naranja",
+      "sabor": "ácido",
+      "precio": 2.0
+    },
+    {
+      "nombre": "uva",
+      "color": "morado",
+      "sabor": "dulce",
+      "precio": 3.0
+    }
+  ]
+}
