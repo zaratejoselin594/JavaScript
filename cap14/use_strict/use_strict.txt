@@ -1,0 +1,19 @@
+Modo estricto (use strict):
+  Convierte los errores de javascript es exepciones
+  Mejora la optimizacion de los errores 
+  Wvita sintaxis usadas en posteriores a ES6
+  No permite que el programador realize una mala sintaxis
+
+Declarar bien las variables
+
+usando modo esticto 
+  variables declaradas
+  modificar propiedades (definepropierti() y writeable)
+  agregar propiedades  
+  no se puede agregar propiedades a un string
+  no existen multiples variables a una funcion
+  delete en objetos o variables
+  las palabras reservadas no pueden usarce como variables
+  cambiar el this
+  numeris octales con "o" adelante y no exciste el with
+  argumentos y eval no pueden ser variables
