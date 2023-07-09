@@ -1,0 +1,9 @@
+objeto date{
+  getDate()
+  getDay()
+  getMonth()
+  getYear()
+  getHours()
+  getMinute()
+  getSeconds()
+}
