@@ -1,0 +1,1 @@
+// ver pagina = https://lenguajejs.com/javascript/introduccion/operadores-basicos/

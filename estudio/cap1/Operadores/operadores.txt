@@ -1,0 +1,134 @@
+Visitar: https://lenguajejs.com/javascript/introduccion/operadores-basicos/
+
+Operadores aritméticos
+
+Nombre
+Operador
+Descripción
+Suma
+a + b
+Suma el valor de a al valor de b.
+Resta
+a - b
+Resta el valor de b al valor de a.
+Multiplicación
+a * b
+Multiplica el valor de a por el valor de b.
+División
+a / b
+Divide el valor de a entre el valor de b.
+Módulo
+a % b
+Devuelve el resto de la división de a entre b.
+Exponenciación
+a ** b
+Eleva a a la potencia de b, es decir, ab. Equivalente a Math.pow(a, b).
+Menos frecuentes suelen ser el módulo o la exponenciación, sin embargo, muy útiles en algunas situaciones.
+
+Operador módulo
+Observa el siguiente ejemplo donde utilizamos la operación módulo para limitar el índice:
+
+const numbers = [10, 20, 30, 40, 50, 60, 70, 80];
+
+for (let i = 0; i < numbers.length; i++) {
+  const mod = i % 2;
+  console.log(numbers[i], numbers[mod]);
+}
+Observa que en el console.log() estamos mostrando numbers[i] y luego numbers[mod]. Si ejecutas este código, comprobarás que en el primer caso, se van mostrando los valores del array numbers, es decir, 10, 20, 30... y así hasta 80. Sin embargo, en el segundo caso del console.log(), donde utilizamos mod como índice, se repiten los dos primeros: 10, 20, 10, 20, 10, 20....
+
+Esto ocurre porque en la línea const mod = i % 2 hemos hecho el módulo sobre 2 y no estamos dejando que ese índice crezca más de 2, los valores que va a tomar mod en el bucle serán 0, 1, 0, 1, 0, 1..., puedes comprobarlo cambiando el console.log() y mostrando los valores i y mod.
+
+Operador de exponenciación
+En el caso de la exponenciación, simplemente podemos utilizar el operador **. Antiguamente, la exponenciación se hacía a través del método Math.pow(), sin embargo, ahora podemos hacerlo a través de este operador, con idéntico resultado:
+
+const a = 2;
+const b = 5;
+
+console.log(Math.pow(a, b));    // 32
+console.log(a ** b);            // 32
+console.log(a * a * a * a * a); // 32
+En este caso, estamos haciendo la operación 25, es decir, 2 * 2 * 2 * 2 * 2.
+
+Operadores unarios
+Los operadores unarios son aquellos que en lugar de tener dos operandos, como los anteriores, sólo tienen uno. Es decir, se realizan sobre un sólo valor almacenado en una variable.
+
+Nombre
+Operador
+Descripción
+Incremento
+a++
+Usa el valor de a y luego lo incrementa. También llamado postincremento.
+Decremento
+a--
+Usa el valor de a y luego lo decrementa. También llamado postdecremento.
+Incremento previo
+++a
+Incrementa el valor de a y luego lo usa. También llamado preincremento.
+Decremento previo
+--a
+Decrementa el valor de a y luego lo usa. También llamado predecremento.
+Resta unaria
+-a
+Cambia de signo (niega) a a.
+
+Operadores de comparación
+Los operadores de comparación son aquellos que utilizamos en nuestro código (generalmente, en el interior de un if, aunque no es el único sitio donde podemos utilizarlos) para realizar comprobaciones. Estas expresiones de comparación devuelven un  booleano con un valor de true o false.
+
+Nombre
+Operador
+Descripción
+Operador de igualdad ==
+a == b
+Comprueba si el valor de a es igual al de b. No comprueba tipo de dato.
+Operador de desigualdad !=
+a != b
+Comprueba si el valor de a no es igual al de b. No comprueba tipo de dato.
+Operador mayor que >
+a > b
+Comprueba si el valor de a es mayor que el de b.
+Operador mayor/igual que >=
+a >= b
+Comprueba si el valor de a es mayor o igual que el de b.
+Operador menor que <
+a < b
+Comprueba si el valor de a es menor que el de b.
+Operador menor/igual que <=
+a <= b
+Comprueba si el valor de a es menor o igual que el de b.
+Operador de identidad ===
+a === b
+Comprueba si el valor y el tipo de dato de a es igual al de b.
+Operador no idéntico !==
+a !== b
+Comprueba si el valor y el tipo de dato de a no es igual al de b.
+
+Asignación a nivel de bit
+De la misma forma que anteriormente vimos que tenemos a nuestra disposición unos operadores de asignación compactos para realizar tareas más verbosas, tenemos de la misma forma una serie de operadores de asignación a nivel de bit. Son los siguientes:
+
+Nombre
+Operador
+Descripción
+Desplazamiento a la izquierda y asignación
+a <<= b
+Es equivalente a a = a << b.
+Desplazamiento a la derecha y asignación
+a >>= b
+Es equivalente a a = a >> b.
+Desplazamiento a la derecha sin signo y asignación
+a >>>= b
+Es equivalente a a = a >>> b.
+Operación AND y asignación
+a &= b
+Es equivalente a a = a & b
+Operación OR y asignación
+a |= b
+Es equivalente a a = a | b
+Operación XOR y asignación
+a ^= b
+Es equivalente a a = a ^ b
+Operación AND lógico y asignación
+a &&= b
+Es equivalente a a && (a = b)
+Operación OR lógico y asignación
+a ||= b
+Es equivalente a a || (a = b)
